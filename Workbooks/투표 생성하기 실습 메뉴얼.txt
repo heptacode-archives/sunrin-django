@@ -1,0 +1,17 @@
+1. 가상환경 만들기		virtualenv myenv 또는 python -m venv myenv
+2. 가상환경 활성화하기	myenv\scripts\activate
+3. 장고 설치하기		pip install django
+4. 프로젝트 생성하기		django-admin startproject mysite
+5. 프로젝트로 이동하기	cd mysite
+6. 기본 테이블 생성하기	python manage.py migrate
+7. 개발용 웹서버 확인하기	python manage.py runserver
+8. 관리자 만들기		python manage.py createsuperuser
+9. 애플리케이션 생성하기	python manage.py startapp polls
+10. 애플리케이션 등록하기 	settings.py
+11. Question, Choice 모델 만들기 models.py
+12. 모델 활성화하기		python manage.py makemigrations
+			python manage.py migrate
+13. 모델 admin 사이트에 등록하기 admin.py
+14. url conf mysite/urls.py 와 polls/urls.py
+15. index, detail, vote, results 뷰 만들기 views.py
+16. index, detail, vote, results 템플릿 만들기 templates/poll
